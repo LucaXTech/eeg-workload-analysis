@@ -28,11 +28,18 @@ eeg-workload-analysis-portfolio/
 │   ├── n_level_test.py
 │   ├── n_speed_train.py
 │   └── n_speed_test.py
+├── analysis_examples/
+│   ├── README.md
+│   ├── spectral_features_example.py
+│   ├── baseline_classification_example.py
+│   └── time_on_task_example.py
 ├── docs/
-│   └── BCICore8_Electrode_Positions.png
+│   ├── BCICore8_Electrode_Positions.png
+│   └── protocol_summary.md
 ├── paradigms/
 │   ├── nlevels/
 │   └── nspeed/
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -97,21 +104,49 @@ These scripts are provided as documentation of the experimental acquisition work
 
 ## Analysis workflow
 
-The complete thesis analysis included:
+The repository includes three sanitized and self-contained analysis examples.
 
-* EEG preprocessing and quality control;
-* event-based segmentation;
-* spectral feature extraction;
-* bandpower and ratio-based features;
-* ERP analysis;
-* behavioral and questionnaire integration;
-* within-subject and leave-one-subject-out validation;
-* feature-set comparison;
-* time-on-task analysis;
-* temporal generalization;
-* cross-paradigm transfer.
+### Spectral feature extraction
 
-Representative analysis examples will be added in a sanitized form. No raw EEG recordings, participant-level files or sensitive data will be included.
+The script `analysis_examples/spectral_features_example.py` demonstrates fixed-length EEG windowing and spectral feature extraction using Welch PSD estimation.
+
+It includes:
+
+* delta, theta, alpha and beta bandpower extraction;
+* log-bandpower features;
+* theta/alpha and alpha/theta ratios;
+* engagement index;
+* optional synthetic EEG-like data generation.
+
+### Baseline classification
+
+The script `analysis_examples/baseline_classification_example.py` demonstrates a leakage-aware machine-learning workflow for EEG workload classification.
+
+It includes:
+
+* synthetic EEG feature table generation;
+* train/test holdout evaluation;
+* leave-one-subject-out validation;
+* Logistic Regression;
+* shrinkage Linear Discriminant Analysis;
+* accuracy, balanced accuracy, macro F1-score, confusion matrix and classification report.
+
+Scaling and model fitting are handled inside scikit-learn pipelines to avoid data leakage.
+
+### Time-on-task analysis
+
+The script `analysis_examples/time_on_task_example.py` demonstrates temporal analysis of EEG features across task segments.
+
+It includes:
+
+* temporal segment handling;
+* within-subject feature normalization;
+* early, middle and late phase comparison;
+* Spearman trend analysis;
+* Kruskal-Wallis testing across temporal phases;
+* simple time-course plot generation.
+
+This module documents how EEG workload markers can be analyzed dynamically rather than only as static block-level averages.
 
 ---
 
