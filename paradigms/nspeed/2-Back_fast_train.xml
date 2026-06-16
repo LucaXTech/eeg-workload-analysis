@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data  xmlns="xsd"
+       xmlns:ns="http://www.w3.org/2001/XMLSchema-instance"
+       ns:schemaLocation="xsd ParadigmSchema.xsd">
+
+<Paradigm BaseFolder="media/" TaskOrder="Deterministic" UdpAddress="127.0.0.1" UdpPort="1000">
+  <Task ns:type="SingleTask" ID="ST_PreParadigm" DurationSeconds="5">
+    <Stimulus ns:type="TextStimulus" Caption="..."/>
+  </Task>
+  <Task ns:type="MultiTask" ID="MT_Block_Wrapper" TaskOrder="Deterministic" SampleSize="1">
+  <Task ns:type="MultiTask" ID="MT_1_2Back_Wrapper" TaskOrder="Deterministic" SampleSize="2">
+  <Task ns:type="SingleTask" ID="ST_Break_1" DurationSeconds="30.0">
+    <Stimulus ns:type="TextStimulus" Caption="2-Back\n+\n"/>
+  </Task>
+  <Task ns:type="MultiTask" ID="MT_1_2Back_Stim" TaskOrder="Deterministic" SampleSize="80">
+   <Task ns:type="MultiTask" ID="MT_1_2Back" TaskOrder="Deterministic" SampleSize="1">
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_001_Z" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="Z" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_002_K" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="K" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_003_Q" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="Q" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_004_F" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="F" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_005_N" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_006_F" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="F" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_007_N" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_008_M" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="M" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_009_R" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="R" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_010_M" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="M" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_011_R" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="R" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_012_S" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="S" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_013_G" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="G" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_014_S" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="S" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_015_V" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="V" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_016_G" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="G" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_017_N" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_018_T" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="T" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_019_T" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="T" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_020_T" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="T" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_021_H" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="H" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_022_S" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="S" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_023_H" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="H" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_024_S" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="S" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_025_X" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="X" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_026_Z" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="Z" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_027_N" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_028_D" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="D" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_029_D" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="D" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_030_R" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="R" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_031_F" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="F" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_032_R" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="R" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_033_F" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="F" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_034_G" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="G" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_035_D" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="D" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_036_N" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_037_D" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="D" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_038_N" DurationSeconds="0.4" Group="1">
+      <Stimulus ns:type="TextStimulus" Caption="N" UdpMessage="61"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_039_W" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="W" UdpMessage="62"/>
+	 </Task>
+     <Task ns:type="SingleTask" ID="ST_1_2Back_Stim_040_H" DurationSeconds="0.4" Group="2">
+      <Stimulus ns:type="TextStimulus" Caption="H" UdpMessage="62"/>
+	 </Task>
+   </Task>
+    <Task ns:type="SingleTask" ID="ST_1_2Back_Rest" DurationSeconds="0.4" Group="0">
+     <Stimulus ns:type="TextStimulus" Caption=""/>
+	</Task>
+  </Task>
+  </Task>
+  </Task>
+</Paradigm>
+</Data>
