@@ -44,8 +44,10 @@ eeg-workload-analysis-portfolio/
 │   └── nspeed/
 ├── requirements.txt
 ├── requirements_acquisition.txt
+├── NOTICE.md
 ├── .gitignore
 └── README.md
+
 ```
 ## Installation
 
@@ -235,17 +237,19 @@ The repository is intended as a technical portfolio demonstrating experimental d
 
 ---
 
-## License
+## License and notice
 
-No open-source license is currently provided. The repository is shared as a technical portfolio for academic and research application purposes.
+No open-source license is currently provided. This repository is shared as a sanitized technical portfolio for academic and research application purposes.
 
 The acquisition scripts depend on g.Pype, which is distributed separately by g.tec medical engineering under its own license. This repository does not redistribute g.Pype.
+
+See `NOTICE.md` for copyright, privacy and third-party dependency notes.
+
 
 ---
 
 ## Author
 
-**Luca Serioli**
-Biomedical Engineer
+**Luca Serioli**<br>
+Biomedical Engineer<br>
 EEG signal processing, computational neurophysiology and biomedical data analysis
-
