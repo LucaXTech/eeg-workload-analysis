@@ -8,6 +8,18 @@ No raw EEG recordings, participant-level files, questionnaire data or thesis out
 
 ---
 
+## How to run the examples
+
+Example commands are provided in:
+
+```text
+analysis_examples/run_examples.md
+```
+
+The scripts can run without participant data by generating synthetic EEG-like signals or synthetic feature tables where appropriate.
+
+---
+
 ## Available scripts
 
 ### `spectral_features_example.py`
