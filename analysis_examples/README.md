@@ -65,12 +65,29 @@ The script demonstrates how EEG features can be analyzed dynamically rather than
 
 ---
 
+### `cross_paradigm_transfer_example.py`
+
+Self-contained example for cross-paradigm workload decoding.
+
+Main components:
+
+* synthetic feature generation for two related EEG workload paradigms;
+* within-paradigm evaluation;
+* cross-paradigm transfer evaluation;
+* leakage-aware scikit-learn pipelines;
+* Logistic Regression;
+* shrinkage Linear Discriminant Analysis;
+* accuracy, balanced accuracy, macro F1-score and confusion matrix.
+
+The script demonstrates how a classifier trained on one workload manipulation can be tested on another paradigm. This is useful for assessing whether EEG workload markers are task-specific or partially transferable across experimental conditions.
+
+---
+
 ## Planned additional modules
 
 Additional sanitized examples may include:
 
 * observation-time analysis;
-* cross-paradigm transfer;
 * ERP feature extraction and classification;
 * behavioral and questionnaire integration.
 
