@@ -91,7 +91,7 @@ The scripts define:
 * participant ID handling;
 * operator control panel for advancing through experimental blocks.
 
-These scripts are provided as documentation of the experimental acquisition workflow and may require the g.Pype environment and g.tec-specific dependencies to run.
+These scripts are provided as documentation of the experimental acquisition workflow and require the g.Pype SDK. g.Pype is publicly available as a Python SDK for neuroscience and BCI applications and can be installed with `pip install gpype`. Some scripts also use PySide6 for the operator control panel.
 
 ---
 
