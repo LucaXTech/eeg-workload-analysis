@@ -32,7 +32,8 @@ eeg-workload-analysis-portfolio/
 │   ├── README.md
 │   ├── spectral_features_example.py
 │   ├── baseline_classification_example.py
-│   └── time_on_task_example.py
+│   ├── time_on_task_example.py
+|   └── cross_paradigm_transfer_example.py
 ├── docs/
 │   ├── BCICore8_Electrode_Positions.png
 │   └── protocol_summary.md
@@ -147,6 +148,22 @@ It includes:
 * simple time-course plot generation.
 
 This module documents how EEG workload markers can be analyzed dynamically rather than only as static block-level averages.
+
+### Cross-paradigm transfer
+
+The script `analysis_examples/cross_paradigm_transfer_example.py` demonstrates cross-paradigm workload decoding.
+
+It includes:
+
+* synthetic feature generation for two related EEG workload paradigms;
+* within-paradigm evaluation;
+* cross-paradigm transfer evaluation;
+* leakage-aware scikit-learn pipelines;
+* Logistic Regression;
+* shrinkage Linear Discriminant Analysis;
+* accuracy, balanced accuracy, macro F1-score and confusion matrix.
+
+This module documents how a classifier trained on one workload manipulation can be tested on another paradigm. It is useful for assessing whether EEG workload markers are task-specific or partially transferable across experimental conditions.
 
 ---
 
