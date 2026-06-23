@@ -82,15 +82,15 @@ EEG was acquired using a g.tec BCI Core-8 system with 8 EEG channels and a sampl
 The channel configuration was:
 
 | Channel | Electrode |
-| ------- | --------- |
-| 1       | Fz        |
-| 2       | C3        |
-| 3       | Cz        |
-| 4       | C4        |
-| 5       | Pz        |
-| 6       | PO7       |
-| 7       | POz       |
-| 8       | PO8       |
+|---|---|
+| Ch01 | Fz |
+| Ch02 | C3 |
+| Ch03 | Cz |
+| Ch04 | C4 |
+| Ch05 | Pz |
+| Ch06 | PO7 |
+| Ch07 | POz |
+| Ch08 | PO8 |
 
 Ground/reference electrodes were placed below P10 and TP10.
 
