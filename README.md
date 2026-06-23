@@ -49,19 +49,17 @@ eeg-workload-analysis/
 ├── NOTICE.md
 ├── .gitignore
 └── README.md
-
----
-
+```
 ## Master's thesis
 
 The full MSc thesis associated with this project is available in:
 
 ```text
 thesis/Thesis_Luca_Serioli.pdf
+```
 
 The public repository does not include raw EEG recordings, participant-level files, questionnaire data, behavioral response files or private analysis outputs.
 
-```
 ## Installation
 
 The repository separates analysis dependencies from acquisition dependencies.
@@ -83,6 +81,7 @@ pip install -r requirements_acquisition.txt
 This includes `gpype` and `PySide6`, which are required for the g.Pype-based acquisition scripts and the operator control panel.
 
 The analysis examples can run without the acquisition dependencies.
+
 
 ---
 
