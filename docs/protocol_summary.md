@@ -34,16 +34,18 @@ The EEG montage included the following channels:
 
 | Channel | Electrode |
 | ------- | --------- |
-| 1       | Fz        |
-| 2       | C3        |
-| 3       | Cz        |
-| 4       | C4        |
-| 5       | Pz        |
-| 6       | PO7       |
-| 7       | POz       |
-| 8       | PO8       |
+| Ch01    | Fz        |
+| Ch02    | C3        |
+| Ch03    | Cz        |
+| Ch04    | C4        |
+| Ch05    | Pz        |
+| Ch06    | PO7       |
+| Ch07    | POz       |
+| Ch08    | PO8       |
 
-Ground/reference electrodes were placed below P10 and TP10.
+The reference/ground electrodes were placed over the right mastoid region (P10/TP10).
+
+In the exported CSV files, `Ch01`–`Ch08` correspond to EEG channels. Additional columns such as `Ch09` and `Ch10` may be used for experimental markers and should not be treated as EEG channels.
 
 ---
 
@@ -125,7 +127,7 @@ Each condition was presented as a separate block.
 
 Each block included a pre-block period followed by the N-back stimulus sequence. After each block, the participant completed a simplified NASA-TLX questionnaire before the next block was started.
 
-The acquisition scripts included a custom operator control panel to advance through the predefined block sequence. This allowed the operator to start the first block from the ParadigmPresenter and then move through the remaining blocks in a controlled order.
+The acquisition scripts included a custom operator control panel to advance through the predefined block sequence. This allowed the operator to start the first block from ParadigmPresenter and then move through the remaining blocks in a controlled order.
 
 ---
 
@@ -141,7 +143,7 @@ The protocol was designed to support several levels of analysis:
 * time-on-task and temporal drift analysis;
 * cross-paradigm transfer between N-LEVELS and N-SPEED.
 
-The separation between TRAIN and TEST sessions was used to reduce overly optimistic evaluation and support more realistic validation of EEG-based workload decoding.
+The separation between TRAIN and TEST sessions was used to support more realistic validation of EEG-based workload decoding and to reduce the risk of overly optimistic performance estimates.
 
 ---
 
