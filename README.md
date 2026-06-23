@@ -42,6 +42,8 @@ eeg-workload-analysis-portfolio/
 ├── paradigms/
 │   ├── nlevels/
 │   └── nspeed/
+├── thesis/
+│   └── Thesis_Luca_Serioli.pdf
 ├── requirements.txt
 ├── requirements_acquisition.txt
 ├── NOTICE.md
