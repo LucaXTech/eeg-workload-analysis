@@ -22,7 +22,7 @@ Each paradigm included separate TRAIN and TEST sessions with predefined block or
 ## Repository contents
 
 ```text
-eeg-workload-analysis-portfolio/
+eeg-workload-analysis/
 ├── acquisition/
 │   ├── n_level_train.py
 │   ├── n_level_test.py
@@ -49,6 +49,17 @@ eeg-workload-analysis-portfolio/
 ├── NOTICE.md
 ├── .gitignore
 └── README.md
+
+---
+
+## Master's thesis
+
+The full MSc thesis associated with this project is available in:
+
+```text
+thesis/Thesis_Luca_Serioli.pdf
+
+The public repository does not include raw EEG recordings, participant-level files, questionnaire data, behavioral response files or private analysis outputs.
 
 ```
 ## Installation
@@ -92,8 +103,7 @@ The channel configuration was:
 | Ch07 | POz |
 | Ch08 | PO8 |
 
-Ground/reference electrodes were placed below P10 and TP10.
-
+The reference/ground electrodes were placed over the right mastoid region (P10/TP10).
 ![BCI Core-8 electrode layout](docs/BCICore8_Electrode_Positions.png)
 
 ---
@@ -157,7 +167,7 @@ The file `docs/reproducibility_notes.md` summarizes the main validation and repr
 * observation-time analysis;
 * time-on-task analysis;
 * cross-paradigm transfer;
-* limitations of the public portfolio repository.
+* limitations of the public sanitized repository.
 
 ---
 
@@ -235,7 +245,7 @@ This repository does not include:
 * behavioral response files;
 * clinical or sensitive data.
 
-The repository is intended as a technical portfolio demonstrating experimental design, acquisition workflow documentation, and reproducible EEG analysis structure.
+The repository is intended as a sanitized technical example demonstrating experimental design, acquisition workflow documentation, and reproducible EEG analysis structure.
 
 ---
 
